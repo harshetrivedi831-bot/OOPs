@@ -1,0 +1,4 @@
+product is parent class / object 
+it has : 
+Attributes ( id,name.price,stock)
+Method( reduceStock(),getFinalPrice and displayDetails)

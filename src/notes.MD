@@ -4,4 +4,7 @@
 Above getters and getters are used in other class and benefit is u will have controlled access over class private members.
 So,
 encapsulation single most purpose is to secure data and thats why we say that OOPs way of writing code is secure ( which is one of the feature we achieve using encapsulation).
+-------------------------------
+
+
 
