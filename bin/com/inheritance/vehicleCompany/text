@@ -1,0 +1,6 @@
+Another real-world requirement: Vehicle and ElectricCar (is-a relation)
+
+Requirement 1 (parent Vehicle): every vehicle has a registration number, brand, and model, and supports start(), stop(), and viewVehicleDetails().
+Requirement 2 (child ElectricCar): an electric car is a vehicle that also has a battery capacity and charging level, and supports chargeBattery() and viewBatteryStatus().
+
+parent class vehicle done : 

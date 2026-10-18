@@ -1,0 +1,40 @@
+Parent: Employee
+Fields: empId, name, basicSalary, leaveBalance (starts at 12)
+
+calculateSalary()
+HRA = 20% of basic
+Tax = 10% of basic if basic > 50,000, otherwise 5%
+Net salary = basic + HRA - tax
+Return the net salary.
+
+applyLeave(int days)
+If days <= 0, print “Invalid days”.
+If days <= leaveBalance, deduct it and print “Leave approved”.
+Otherwise print “Insufficient leave balance”.
+
+--- Employee parent class 
+~ salaryCalculate() 
+~ applyLeave () 
++ 
+common attributes
+-------------------------------------------------
+Child: Manager extends Employee
+Extra fields: teamSize, bonusPercent
+
+calculateSalary() (override)
+Start from the parent’s net salary (use super.calculateSalary()).
+Add a team allowance of 1,000 per team member.
+Add a bonus of bonusPercent(10)% of basic salary.
+Return the final salary.
+applyLeave(int days) (override)
+Managers can take at most 5 days in one request. If days > 5, print “Managers cannot take more than 5 days at once”.
+Otherwise, reuse the parent’s logic with super.applyLeave(days).
+viewManagerDetails(): reuse the parent’s details method and print the extra fields.
+
+---------------------mistakes i did in logical sections will improve later on !!!
+Test cases for your Driver:
+
+Employee with basic 40,000: check that the net salary is 40,000 + 8,000 - 2,000 = 46,000.
+Employee applies for 15 days: should say insufficient balance.
+Manager with basic 60,000, team of 5, bonus 10%: work out the expected salary by hand first, then compare it with your output.
+Manager applies for 6 days: rejected by the manager rule. Then apply for 4 days: approved, and the balance drops to 8

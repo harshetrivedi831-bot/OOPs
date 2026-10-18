@@ -9,7 +9,7 @@ public static void main(String[] args) {
 	// this balance i want to read - use getter method 
 	int balance=account.getBalance();
 	System.out.println("current balance : " + balance);
-	
+	System.out.println();
 	System.out.println();
 	
 	// deposit money that will be added in balance

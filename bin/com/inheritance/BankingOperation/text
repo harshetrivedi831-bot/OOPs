@@ -1,0 +1,4 @@
+Requirement 1: Basic banking operations for every account
+Every bank account (whatever its type) must have an account number, holder name, and balance, and must support deposit() and withdraw(). This goes in the parent class Account.
+Requirement 2: Savings accounts earn interest and limit withdrawals
+A savings account is an account that also earns interest (addInterest()) and cannot be withdrawn from below a minimum balance. This goes in the child class SavingsAccount, which inherits everything from Account and adds or overrides only what is specific to it.
